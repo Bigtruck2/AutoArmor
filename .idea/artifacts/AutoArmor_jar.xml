@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="AutoArmor:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/AutoArmor_jar</output-path>
+    <root id="archive" name="AutoArmor.jar">
+      <element id="module-output" name="AutoArmor" />
+      <element id="extracted-dir" path="$USER_HOME$/Music/1.8.8/spigot-1.8.8-R0.1-SNAPSHOT-latest.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

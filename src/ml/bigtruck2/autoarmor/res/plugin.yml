@@ -1,0 +1,4 @@
+name: Music
+version: v1
+main: ml.bigtruck2.autoarmor.AutoArmor
+api-version: 1.8
