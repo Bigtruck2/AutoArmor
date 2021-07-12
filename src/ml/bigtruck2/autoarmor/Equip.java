@@ -1,13 +1,11 @@
 package ml.bigtruck2.autoarmor;
 
 import org.bukkit.Material;
-import org.bukkit.entity.Item;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerPickupItemEvent;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.scheduler.BukkitRunnable;
 
 public class Equip implements Listener {
     @EventHandler
@@ -24,7 +22,6 @@ public class Equip implements Listener {
         Material material = e.getItem().getItemStack().getType();
         if(material == Material.LEATHER_CHESTPLATE || material == Material.LEATHER_HELMET || material == Material.LEATHER_BOOTS||material == Material.LEATHER_LEGGINGS || material == Material.IRON_CHESTPLATE || material == Material.IRON_HELMET || material == Material.IRON_BOOTS||material == Material.IRON_LEGGINGS || material == Material.GOLD_CHESTPLATE || material == Material.GOLD_HELMET || material == Material.GOLD_BOOTS||material == Material.GOLD_LEGGINGS || material == Material.CHAINMAIL_CHESTPLATE || material == Material.CHAINMAIL_HELMET || material == Material.CHAINMAIL_BOOTS||material == Material.CHAINMAIL_LEGGINGS || material == Material.DIAMOND_CHESTPLATE || material == Material.DIAMOND_HELMET || material == Material.DIAMOND_BOOTS||material == Material.DIAMOND_LEGGINGS){
             ItemStack itemStack = e.getItem().getItemStack();
-            System.out.println(itemStack);
                if(material == Material.LEATHER_HELMET){
                     newHead = 1;
                 }else if (material == Material.GOLD_HELMET){
