@@ -1,5 +1,6 @@
 package ml.bigtruck2.autoarmor;
 
+import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -85,6 +86,7 @@ public class Equip implements Listener {
                     player.getInventory().addItem(itemStack1);
                     e.getItem().remove();
                     e.setCancelled(true);
+                    player.sendMessage("Automatically equipped better Helmet");
                 }
             }
             if(player.getEquipment().getLeggings() != null) {
@@ -105,6 +107,7 @@ public class Equip implements Listener {
                     player.getInventory().addItem(itemStack2);
                     e.getItem().remove();
                     e.setCancelled(true);
+                    player.sendMessage("Automatically equipped better Leggings");
                 }
             }
             if(player.getEquipment().getChestplate() != null) {
@@ -125,6 +128,7 @@ public class Equip implements Listener {
                     player.getInventory().addItem(itemStack3);
                     e.getItem().remove();
                     e.setCancelled(true);
+                    player.sendMessage("Automatically equipped better Chestplate");
                 }
             }
             if(player.getEquipment().getBoots() != null) {
@@ -145,24 +149,29 @@ public class Equip implements Listener {
                     player.getInventory().addItem(itemStack4);
                     e.getItem().remove();
                     e.setCancelled(true);
+                    player.sendMessage("Automatically equipped better Boots");
                 }
             }
                if(newBoots != 0 && currentBoots == 0){
                     player.getEquipment().setBoots(itemStack);
                    e.getItem().remove();
                    e.setCancelled(true);
+                   player.sendMessage("Automatically equipped Boots");
                 }else if (newChest != 0 && currentChest == 0){
                     player.getEquipment().setChestplate(itemStack);
                    e.getItem().remove();
                    e.setCancelled(true);
+                   player.sendMessage("Automatically equipped a Chestplate");
                 }else if (newHead != 0 && currentHead == 0){
                     player.getEquipment().setHelmet(itemStack);
                    e.getItem().remove();
                    e.setCancelled(true);
+                   player.sendMessage("Automatically equipped a Helmet");
                 }else if(newlLeg != 0 && currentlLeg == 0){
                     player.getEquipment().setLeggings(itemStack);
                    e.getItem().remove();
                    e.setCancelled(true);
+                   player.sendMessage("Automatically equipped Leggings");
                 }
 
         }
