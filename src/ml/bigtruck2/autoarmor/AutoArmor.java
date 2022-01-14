@@ -8,7 +8,6 @@ public class AutoArmor extends JavaPlugin {
     @Override
     public void onEnable() {
         Bukkit.getServer().getPluginManager().registerEvents(new Equip(), this);
-        Bukkit.getServer().getPluginManager().registerEvents(new FlintAndSteel(), this);
         plugin = this;
     }
 
